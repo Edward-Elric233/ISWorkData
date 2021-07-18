@@ -3,7 +3,7 @@
 - 命令行调用：
     ```shell
     python3 data_process.py "原始数据文件夹" "输出数据文件夹" "文件名"
-    python3 data_process.py "./dot/" "./graph" "data1.json"
+    python3 data_process.py "./dot/" "./graph/" "data1.json"
     ```
 - 代码设置：在`data_process.py`文件中，通过设置`input_dir`、`output_dir`、`file_name`三个变量的值设定原始数据文件夹、输出数据文件夹、文件名
 
