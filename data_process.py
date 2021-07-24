@@ -29,19 +29,14 @@ def convert_type(input, null=None):
             print("convert type failed...input is "+input)
             return null
 
-def dot2graph(input_filter, output_filter, file_name):
-    print(input_filter)
-    print(output_filter)
-    print(file_name)
-    lib.dot2graph(convert_type(input_filter), convert_type(output_filter), convert_type(file_name));
+def dot2graph(input_path, output_path):
+    lib.dot2graph(convert_type(input_path), convert_type(output_path));
 
 if __name__ == '__main__':
-    #print("test")
-    input_dir = "./dot/"
-    output_dir = "./graph"
-    file_name = "data1.json"
-    if len(sys.argv) == 4:
-        input_dir = sys.argv[1]
-        output_dir = sys.argv[2]
-        file_name = sys.argv[3]
-    dot2graph(input_dir, output_dir, file_name)
+    input_path = "./dot/data1.json"
+    output_path = "./graph/data1.json"
+    input_path = sys.argv[1]
+    output_path = sys.argv[2]
+    dot2graph(input_path, output_path)
+
+
